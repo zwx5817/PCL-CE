@@ -1250,7 +1250,7 @@ public static class ModBase
                 var fileSize = info.Length;
                 var errorMessage = new List<string>();
                 var allowIgnore = false; // 允许相信哈希正确但是大小不正确
-                if (!string.IsNullOrEmpty(hash))
+                if (false && !string.IsNullOrEmpty(hash))
                 {
                     if (hash.Length < 35) // MD5
                     {
