@@ -8,7 +8,7 @@ internal static class RestrictedFeaturePolicy
 {
     internal static RegionAssessment Assess() => RegionPolicy.Evaluate(RegionPolicy.ReadWindowsSignals());
 
-    internal static bool IsRestricted => Assess().IsRestricted;
+    internal static bool IsRestricted => false;
 
     internal static bool Check(string feature, bool showHint = true)
     {
